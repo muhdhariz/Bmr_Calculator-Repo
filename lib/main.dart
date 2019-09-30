@@ -265,7 +265,6 @@ class _MyAppState extends State<MyApp> {
                           style: TextStyle(fontSize: 15),
                         ),
                       ),
-                      Container(),
                       Container(
                         width: 40,
                         child: Text('Reset'),
@@ -281,6 +280,33 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
 
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 190,
+
+                      ),
+                      Container(
+                        height: 50,
+                        alignment: Alignment.topLeft,
+                        child: IconButton(
+                            icon: Icon(Icons.redo),
+                            onPressed: _onClear
+                        ),
+                      ),
+
+                      Container(
+                        alignment: Alignment.topLeft,
+                        child: IconButton(
+                            icon: Icon(Icons.play_arrow),
+                            onPressed: _calculate
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 /*Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Column(
